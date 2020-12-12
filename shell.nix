@@ -9,6 +9,7 @@ pkgs.mkShell {
   venvDir = "./.venv";
   buildInputs = with pkgs; [
     gitAndTools.gitFull
+    pypy3
     python39
     python39Packages.venvShellHook
   ];
